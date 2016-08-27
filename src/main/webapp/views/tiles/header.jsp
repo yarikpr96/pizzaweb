@@ -124,7 +124,7 @@ http://www.templatemo.com/preview/templatemo_360_bookstore
                 <li><sec:authorize access="hasRole('USER')">
                     <a href="/test">Моя піца</a>
                 </sec:authorize>
-                    <ul ul style="display: none; top: 39px; visibility: visible;">
+                    <ul style="display: none; top: 39px; visibility: visible;">
                         <li><span class="top"></span><span class="bottom"></span></li>
                         <li><a href="/allProduct">Продукти</a></li>
 
@@ -139,12 +139,21 @@ http://www.templatemo.com/preview/templatemo_360_bookstore
                     <sec:authorize access="hasRole('ADMIN')">
                         <a href="/allOrder">Замовлення</a>
                     </sec:authorize>
+
                 </li>
+
                 <li>
                     <sec:authorize access="hasRole('USER')">
                         <a href="/pizz">Замовлення</a>
                     </sec:authorize>
+                    <ul style="display: none; top: 39px; visibility: visible;">
+                        <li><span class="top"></span><span class="bottom"></span></li>
+                        <li> <sec:authorize access="hasRole('USER')">
+                            <a href="/oneOrder">Історія</a>
+                        </sec:authorize></li>
+                    </ul>
                 </li>
+
                 <li style="z-index: 100;"><a href="#" class="">Про нас </a>
                     <ul style="display: none; top: 39px; visibility: visible;">
                         <li><span class="top"></span><span class="bottom"></span></li>

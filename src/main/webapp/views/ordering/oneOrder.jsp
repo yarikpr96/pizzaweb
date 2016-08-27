@@ -20,23 +20,23 @@
                 <p style="font-size: 20px;">${a.customer}</p>
                 <p style="font-size: 20px;">${a.address}</p>
                 <p>Замовлення</p>
-                <%--<p style="font-size: 20px;">${a.description}</p>--%>
+                    <%--<p style="font-size: 20px;">${a.description}</p>--%>
                 <p style="font-size: 20px;">${a.pizzaList}</p>
                 <p style="font-size: 20px;"> Дата ${a.date}</p>
                 <p style="font-size: 20px;">Сума ${a.sum}</p>
+                <p>Час доставки ${time}  </p>
 
-
-                <p>
-                        <%--<sec:authorize access="hasRole('ADMIN')">--%>
-                    <form:form action="/allOrder/delete/${a.id_o}" method="post">
-                        <button type="submit">Видалити</button>
-                    </form:form>
-                        <%--</sec:authorize>&ndash;%&gt;--%>
-                </p>
+                <%--<p>--%>
+                        <%--&lt;%&ndash;<sec:authorize access="hasRole('ADMIN')">&ndash;%&gt;--%>
+                    <%--<form:form action="/allOrder/delete/${a.id_o}" method="post">--%>
+                        <%--<button type="submit">Видалити</button>--%>
+                    <%--</form:form>--%>
+                        <%--&lt;%&ndash;</sec:authorize>&ndash;%&gt;&ndash;%&gt;--%>
+                <%--</p>--%>
 
             </div>
 
 
         </c:forEach>
     </div>
-    </div>
+</div>

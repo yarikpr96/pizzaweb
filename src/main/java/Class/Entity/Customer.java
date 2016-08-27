@@ -80,7 +80,7 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                ", name='" + name + '\'' +
+                " name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';

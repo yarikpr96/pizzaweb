@@ -77,23 +77,14 @@ public class Pizza {
         this.orderingList = orderingList;
     }
 
-//    @Override
-//    public String toString() {
-//        return "|Pizza|" +" "+
-//                ", name" +" "+ name +
-//                ", description"+" " + description +
-//                ", price"+" " + price +" грн."+" "
-//                ;
-//    }
-
     @Override
     public String toString() {
-        return "Pizza{" +
-                "id_p=" + id_p +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-
-                '}';
+        return "|Pizza|" +" "+
+                ", name" +" "+ name +
+                ", description"+" " + description +
+                ", price"+" " + price +" грн."+" "
+                ;
     }
+
+
 }
